@@ -11,7 +11,7 @@ def parse(e):
 
 solutions = filter(lambda x: ".py" in x and "init" not in x, os.listdir("src"))
 
-readme_content = "# Advent of code\nProblems list:\n"
+readme_content = "# Advent of code 2023\nProblems list:\n"
 tmp = [f"{i+1}. {parse(e)}" for i, e in enumerate(sorted(solutions))]
 readme_content += "\n".join(tmp)
 
